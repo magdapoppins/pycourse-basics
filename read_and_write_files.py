@@ -1,7 +1,7 @@
 import os
 
 check_file = True
-path_to_file = 'C:/Samples/PythonBasics/secrets.txt'
+path_to_file = 'secrets.txt'
 
 while check_file:
     file_exists = os.path.exists(path_to_file)
