@@ -12,16 +12,19 @@ c = d*math.pi
 print("Diameter: ", d)
 print("Radius: ", r)
 
-# a^2 * b^2 = c^2
-a_sec = (math.sqrt(120))/2
-a = a_sec**2
+# a^2 + b^2 = c^2
+# a^2 + b^2 = 200^2 = 40 000
+a = math.sqrt(20000)
 
-print("{}^2 * {}^2 = {}^2".format(a, a, d))
+print("{}^2 + {}^2 = {}^2".format(a, a, d))
 
 betsy.circle(r)
+# hypo
 betsy.left(90)
 betsy.forward(d)
+# adj
 betsy.left(180-45)
 betsy.forward(a)
-betsy.left(180-45)
+# adj2
+betsy.left(90)
 betsy.forward(a)
